@@ -8,21 +8,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'WhatsApp Clone',
+      title: 'WhatsApp',
       theme: ThemeData(
         primaryColor: Colors.green,
       ),
-      home: WhatsAppHome(),
+      home: _WhatsAppHomeState(),
     );
   }
 }
 
-class WhatsAppHome extends StatefulWidget {
-  @override
-  _WhatsAppHomeState createState() => _WhatsAppHomeState();
-}
+// class WhatsAppHome extends StatefulWidget {
+//   @override
+//   _WhatsAppHomeState createState() => _WhatsAppHomeState();
+// }
 
-class _WhatsAppHomeState extends State<WhatsAppHome> {
+class _WhatsAppHomeState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -30,8 +30,12 @@ class _WhatsAppHomeState extends State<WhatsAppHome> {
       child: Scaffold(
         appBar: AppBar(
           title: Text('WhatsApp'),
-          backgroundColor: Colors.green,
+          backgroundColor: const Color.fromARGB(255, 9, 78, 12),
           actions: <Widget>[
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.camera_alt),
+            ),
             IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
