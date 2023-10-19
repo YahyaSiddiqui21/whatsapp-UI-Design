@@ -5,6 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,11 +17,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-// class WhatsAppHome extends StatefulWidget {
-//   @override
-//   _WhatsAppHomeState createState() => _WhatsAppHomeState();
-// }
 
 class _WhatsAppHomeState extends StatelessWidget {
   @override
