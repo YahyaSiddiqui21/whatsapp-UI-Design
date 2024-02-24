@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.green,
       ),
       home: _WhatsAppHomeState(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -69,6 +70,7 @@ class _WhatsAppHomeState extends StatelessWidget {
               ),
             ),
 
+            // Calls Page
             // Calls Page
             Container(
               child: Center(
